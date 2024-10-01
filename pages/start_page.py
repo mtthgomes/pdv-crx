@@ -1,4 +1,5 @@
 import tkinter as tk
+from pages.payment_page import PaymentPage
 
 class StartPage(tk.Frame):
     def __init__(self, parent, controller):
@@ -13,7 +14,7 @@ class StartPage(tk.Frame):
         self.grid_columnconfigure(0, weight=1)
 
         # Redimensionando o logo
-        logo = tk.PhotoImage(file="logo.png")
+        logo = tk.PhotoImage(file="images/logo.png")
         logo = logo.subsample(2, 2)  # Reduz o tamanho da imagem pela metade
 
         # Frame para o logotipo
